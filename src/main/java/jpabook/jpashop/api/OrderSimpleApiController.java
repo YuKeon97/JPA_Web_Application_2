@@ -48,7 +48,6 @@ public class OrderSimpleApiController {
         List<SimpleOrderDto> result = orders.stream()
                 .map(o -> new SimpleOrderDto(o))
                 .collect(toList());
-
         return result;
     }
 
